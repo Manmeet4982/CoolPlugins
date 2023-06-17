@@ -1,0 +1,171 @@
+:root {
+    --main-header-color: #ffffff;
+    --main-title-color: hsl(169, 99%, 57%);
+    --small-font-color: hsl(0, 0%, 87%);
+    --btn-color: hsl(0, 0%, 0);
+    --bg-color: #0000;
+  
+    --font-family-default: 'Poppins', sans-serif;
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-black: 800;
+  
+    --font-size-card-title: 32px;
+    --font-size-card-desc: 12px;
+    --font-size-loc: 12px;
+    --font-size-btn: 14px;
+    --font-size-head: 60px;
+    --font-size-dt: 8px;
+  }
+  
+  body {
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    background:#000000;
+    font-family: var(--font-family-default);
+  }
+  
+  h2 {
+    font-size: var(--font-size-head);
+    text-align: center;
+  }
+  
+
+  a{
+    text-decoration: none;
+    color: var(--btn-color);
+  }
+
+  .container {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+    position: relative;
+    z-index: 3;
+  }
+  
+  .cards {
+    display: grid;
+    gap: 20px;
+    justify-items: center;
+  }
+  
+  .main-title {
+    color: var(--main-header-color);
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .book-tickets {
+    text-align: center;
+  }
+  
+  .book-tickets img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .tag-cn {
+    color: var(--small-font-color);
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--font-size-card-desc);
+    text-align: left;
+  }
+  
+  .date-txt {
+    font-size: var(--font-size-card-desc);
+  }
+  
+  .ticket-text {
+    width: 100%;
+    max-width: 283px;
+    text-align: left;
+    margin: 0 auto;
+  }
+  
+  .ticket-text h3 {
+    font-size: var(--font-size-card-title);
+    color: var(--main-title-color);
+  }
+  
+  .ticket-text p {
+    font-size: var(--font-size-card-desc);
+    color: var(--small-font-color);
+    font-weight: var(--fw-bold);
+    line-height: 1.5;
+    margin-bottom: 10px;
+    line-height: 25px;
+  }
+  
+  .location {
+    color: var(--small-font-color);
+    font-size: var(--font-size-loc);
+    font-weight: var(--fw-bold);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .location span {
+    position: relative;
+    top: 2px;
+    right: 3px;
+  }
+  
+  .btn {
+    position: relative;
+    border-radius: 20px;
+    font-family: var(--font-family-default);
+    font-weight: var(--fw-bold);
+    color: #000000;
+    font-size: var(--font-size-btn);
+    background: #25feca;
+    padding: 15px 35px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+    top: 14px;
+  }
+  
+  .btn:hover {
+    background: #fd98f7;
+    text-decoration: none;
+  }
+  
+  /* Responsive Styles */
+  
+  @media only screen and (min-width: 1200px) {
+    .cards {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 1199px) and (min-width: 768px) {
+    .cards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .cards {
+      grid-template-columns: 1fr;
+    }
+  
+    h2 {
+      font-size: 40px;
+      text-align: center;
+    }
+  
+    .main-title {
+      margin-bottom: 20px;
+    }
+  
+    .book-tickets {
+      margin-left: 0;
+      margin-bottom: 20px;
+    }
+  }
+  
